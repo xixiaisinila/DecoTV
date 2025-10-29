@@ -83,8 +83,8 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: |
-            ghcr.io/${{ steps.lowercase.outputs.owner }}/decotv:${{ github.event.inputs.tag || 'latest' }}
-            ghcr.io/${{ steps.lowercase.outputs.owner }}/decotv:${{ steps.version.outputs.version }}
+            ghcr.io/${{ steps.lowercase.outputs.owner }}/yiyitv:${{ github.event.inputs.tag || '1992' }}
+            ghcr.io/${{ steps.lowercase.outputs.owner }}/yiyitv:${{ steps.version.outputs.version }}
           outputs: type=image,name=ghcr.io/${{ steps.lowercase.outputs.owner }}/decotv,name-canonical=true,push=true
 
       - name: Export digest
